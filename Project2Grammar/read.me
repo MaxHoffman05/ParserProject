@@ -1,0 +1,21 @@
+Computer Systems II - Project 2 - Beautified Parser
+
+Author: Max Hoffman
+
+Platform: Windows 10 in Vscode
+
+Special Details: Compiled with provided makefile
+
+Known Bugs: There are two bugs that my program has. The first is that my program will not work correctly if there is not at 
+least one newline at the end of the text file. I dont know why this is, and I spent a lot of time trying to debug this problem.
+I feel like the problem might be due to something in my token.cpp code since I used my same code from the last project. 
+But, maybe something is wrong with my grammar code. The second bug is that for some reason when Beautifing my code something
+like the NoParamFuncCall; will not indent. Each of these bugs I spent a long time trying to fix and I still could not figure them out.
+
+Overview of Solution: Overall once I figured out the general structure of each recursive method things went faster and faster. 
+I will say I made a big mistake that probably set me back a day or two by switching half-way through to your provided token code. 
+I dont know why but that introduced bugs for me and I just descided to use my own code. The part that took the longest was figuring
+out what to do when encountering a token that is supposed to be handled in another method, the unget was key there. I also
+severely underestimated the time it would take to do the Beautifing. I went back and forth between parsing through it in main 
+using a loop, to using the token get method in main to parse it that way. I had to throw away a lot of code multiple times before
+finally choosing to do the formatting in the grammar.
